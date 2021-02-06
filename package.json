@@ -1,0 +1,43 @@
+{
+  "name": "rekrutacja_zadanie",
+  "homepage": "https://gucek82.github.io/zadanie_rekrutacyjne/",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack.config.js",
+    "prod": "webpack --config ./config/webpack.config.js",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "> 0.5%",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "autoprefixer": "^10.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "babel-loader": "^8.2.1",
+    "css-loader": "^5.0.1",
+    "exports-loader": "^2.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "image-webpack-loader": "^7.0.1",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.0.4",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "bootstrap": "^4.5.3",
+    "gh-pages": "^3.1.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

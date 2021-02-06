@@ -1,0 +1,91 @@
+@import 'varables';
+@import "~bootstrap/scss/bootstrap";
+@import 'header.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #fff;
+    color: $green;
+    border-radius: 0;
+}
+
+
+.video_container {
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.r-el {
+    min-height: 30vh;
+
+    &_img {
+        background-image: url('/public/inc/obrazek.jpg');
+        background-size: cover;
+    }
+}
+
+.headline {
+    background-color: $green;
+
+}
+
+.prom_container {
+    transform: translateY(-50%);
+
+
+    .prom_el {
+        background-color: $grey;
+
+        &:nth-of-type(2) {
+            position: relative;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -1.5em;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 3em;
+                width: 3em;
+                background-color: $grey;
+                border-radius: 150%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -0.75em;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 1.5em;
+                width: 1.5em;
+                background-color: $green;
+                border-radius: 150%;
+            }
+        }
+    }
+}
+
+.rectangle {
+    background-color: $bgGrey;
+    min-height: 75vh;
+}

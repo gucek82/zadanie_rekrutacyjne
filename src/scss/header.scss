@@ -1,0 +1,34 @@
+@import 'varables';
+
+header {
+    color: $headerGrey;
+
+    .search {
+        border-bottom: 1px solid $headerGrey;
+
+
+        input {
+            border: none;
+
+            &::placeholder {
+                color: $headerGrey;
+            }
+        }
+    }
+
+    .logo {
+        color: $grey;
+    }
+
+    .fas_big {
+        font-size: 2em;
+    }
+
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
